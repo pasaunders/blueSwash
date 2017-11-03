@@ -1,0 +1,22 @@
+@model blueSwash.Models.ListViewModel
+
+<h2>Hi @ViewBag.alias</h2>
+
+<form action="bright_ideas/add" method="post">
+    <input type="text" name="text" placeholder="post something witty here...">
+    <input type="submit" value="Idea!">
+</form>
+
+@foreach(var idea in Model.ideas)
+{
+    <a href="">@(idea.creator.alias) says:</a>
+    <p>@idea.text</p>
+    <form asp-controller="Idea" asp-action="like" method="post">
+        <input type="hidden" name="idea" value="@idea.ideasId">
+        <input type="submit" value="Like">
+    </form>
+    <form asp-action="" method="post">
+        <input type="hidden" name="idea" value="@idea.ideasId">
+        <input type="submit" value="Details">
+    </form>
+}

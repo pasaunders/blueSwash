@@ -1,0 +1,7 @@
+@model blueSwash.Models.UserDetail;
+
+<h2>Name: @Model.user.name</h2>
+<h2>Alias: @Model.user.alias</h2>
+<h2>Email: @Model.user.email</h2>
+<hr>
+<p>Total number of posts: @Model.users.ideas.Count()</p>

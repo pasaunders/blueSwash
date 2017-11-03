@@ -1,0 +1,24 @@
+@model blueSwash.Models.logRegCompositeModel
+
+<div asp-validation-summary="All"></div>
+<form asp-controller="User" asp-action="register" method="post">
+    <label asp-for="registration.name"></label>
+    <input asp-for="registration.name">
+    <label asp-for="registration.alias"></label>
+    <input asp-for="registration.alias">
+    <label asp-for="registration.email"></label>
+    <input asp-for="registration.email">
+    <label asp-for="registration.password"></label>
+    <input asp-for="registration.password">
+    <p>*Must be 8 or more characters</p>
+    <label asp-for="registration.comparePassword"></label>
+    <input asp-for="registration.comparePassword">
+    <input type="submit" value="Register">
+</form>
+<form asp-controller="User" asp-action="login" method="post">
+    <label asp-for="login.alias"></label>
+    <input asp-for="login.alias">
+    <label asp-for="login.password"></label>
+    <input asp-for="login.password">
+    <input type="submit" value="Login">
+</form>

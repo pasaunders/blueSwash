@@ -1,0 +1,16 @@
+@model blueSwash.Models.IdeaDetail
+
+<p>@Model.idea.text</p>
+
+<p>People who liked this post:</p>
+<tr>
+    <th>Alias</th>
+    <th>Name</th>
+</tr>
+@foreach(var person in Model.idea.liked)
+{
+    <tr>
+        <td>@person.user.alias</td>
+        <td>@person.user.name</td>
+    </tr>
+}

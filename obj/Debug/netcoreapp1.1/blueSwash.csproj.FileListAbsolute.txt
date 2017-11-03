@@ -1,0 +1,8 @@
+C:\Users\kaorti\code\blueSwash\bin\Debug\netcoreapp1.1\blueSwash.deps.json
+C:\Users\kaorti\code\blueSwash\bin\Debug\netcoreapp1.1\blueSwash.runtimeconfig.json
+C:\Users\kaorti\code\blueSwash\bin\Debug\netcoreapp1.1\blueSwash.runtimeconfig.dev.json
+C:\Users\kaorti\code\blueSwash\bin\Debug\netcoreapp1.1\blueSwash.dll
+C:\Users\kaorti\code\blueSwash\bin\Debug\netcoreapp1.1\blueSwash.pdb
+C:\Users\kaorti\code\blueSwash\obj\Debug\netcoreapp1.1\blueSwash.AssemblyInfo.cs
+C:\Users\kaorti\code\blueSwash\obj\Debug\netcoreapp1.1\blueSwash.dll
+C:\Users\kaorti\code\blueSwash\obj\Debug\netcoreapp1.1\blueSwash.pdb
