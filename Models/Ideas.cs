@@ -11,7 +11,7 @@ namespace blueSwash.Models
         public Users creator {get; set;}
         // public List<LikedIdeas> liked {get; set;}
 
-        public Ideas()
+        // public Ideas()
         // {
         //     liked = new List<LikedIdeas>();
         // }
