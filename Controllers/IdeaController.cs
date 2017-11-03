@@ -32,7 +32,7 @@ namespace blueSwash.Controllers
             ViewBag.id = currentId;
             ListViewModel showIdeas = new ListViewModel
             {
-                ideas = _context.ideas.Include(item => item.creator).Include(item => item.liked).ToList()
+                ideas = _context.ideas.Include(item => item.creator).ToList()
             };
             return View(showIdeas);
         }
@@ -66,7 +66,7 @@ namespace blueSwash.Controllers
         {
             IdeaDetail ideaData = new IdeaDetail
             {
-                idea = _context.ideas.Include(item => item.liked).ThenInclude(item => item.user).FirstOrDefault(item => item.ideasId == id)
+                idea = _context.ideas.Include(item => item.creator).ThenInclude(item => item.user).FirstOrDefault(item => item.ideasId == id)
             };
             return View(ideaData);
         }
