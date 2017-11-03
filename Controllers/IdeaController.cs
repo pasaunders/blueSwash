@@ -66,7 +66,7 @@ namespace blueSwash.Controllers
         {
             IdeaDetail ideaData = new IdeaDetail
             {
-                idea = _context.ideas.Include(item => item.creator).ThenInclude(item => item.user).FirstOrDefault(item => item.ideasId == id)
+                idea = _context.ideas.Include(item => item.creator).FirstOrDefault(item => item.ideasId == id)
             };
             return View(ideaData);
         }
